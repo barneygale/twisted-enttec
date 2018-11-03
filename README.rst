@@ -1,15 +1,19 @@
 twisted-enttec: Python/Twisted support for the Enttec DMX USB Pro
 =================================================================
 
-This package provides a twisted protocol supports the Enttec DMX USB Pro.
+This package provides a twisted protocol class that supports the Enttec DMX USB
+Pro.
 
 These protocol classes are available, each a subclass of the previous:
 
 - ``EnttecProtocol`` - provides ``connect()``, ``sendPacket()``, and
   ``packetReceived()`` methods.
-- ``EnttecOutputProtocol`` - provides ``step``, ``frame`` and ``params``
-  attributes, plus ``setup()``, ``configure()`` and ``render()`` methods.
-- ``EnttecOutputLoopProtocol`` - provides a ``loop()`` method.
+- ``EnttecOutputProtocol`` - provides ``frame`` and ``params`` attributes, plus
+  ``setup()``, ``configure()`` and ``render()`` methods.
+- ``EnttecOutputLoopProtocol`` - provides a ``step`` attribute and a ``loop()``
+  method.
+
+See the source code for more info.
 
 Example
 -------
